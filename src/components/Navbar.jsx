@@ -1,83 +1,58 @@
-import React from "react";
-import {
-  FaHome,
-  FaUser,
-  FaBook,
-  FaBriefcase,
-  FaEnvelope,
-  FaMoon,
-} from "react-icons/fa";
+import React, { useState } from "react";
 
 const Navbar = () => {
+  const [activeItem, setActiveItem] = useState("Home");
+
+  const handleClick = (item) => {
+    setActiveItem(item);
+  };
+
   return (
     <div>
-      <header
-        className="fixed top-0 left-0 w-full bg-body-color z-fixed transition duration-400"
-        id="header"
-      >
-        <nav className="h-header-height flex justify-between items-center container mx-4">
-          <a
-            href="#"
-            className="text-first-color font-medium transition duration-400"
+      <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2  py-2 px-8  bg-white bg-opacity-75 backdrop-blur-md rounded-full text-base  ">
+        <div className="flex flex-row justify-center items-center gap-8 text-black font-nunito">
+          <div
+            className={`flex  ease-in-out duration-300  transition-all cursor-pointer  ${
+              activeItem === "Home"
+                ? "font-extrabold opacity-100"
+                : "font-normal opacity-50"
+            }`}
+            onClick={() => handleClick("Home")}
           >
-            Ansel
-          </a>
-
-          <div className="fixed bottom-4 bg-hsla-second-hue-32-16-0.8 w-9/10 rounded-full p-4 backdrop-blur-lg transition duration-400">
-            <ul className="flex justify-around items-center">
-              <li>
-                <a
-                  href="#home"
-                  className="text-text-color text-xl p-2 flex rounded-full bg-gradient-to-b from-first-hue to-first-hue-0.2 shadow-lg text-title-color"
-                >
-                  <FaHome />
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#about"
-                  className="text-text-color text-xl p-2 flex rounded-full"
-                >
-                  <FaUser />
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#skills"
-                  className="text-text-color text-xl p-2 flex rounded-full"
-                >
-                  <FaBook />
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#work"
-                  className="text-text-color text-xl p-2 flex rounded-full"
-                >
-                  <FaBriefcase />
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#contact"
-                  className="text-text-color text-xl p-2 flex rounded-full"
-                >
-                  <FaEnvelope />
-                </a>
-              </li>
-            </ul>
+            Home
           </div>
-
-          <FaMoon
-            className="text-xl cursor-pointer transition duration-300 hover:text-first-color"
-            id="theme-button"
-          />
-        </nav>
-      </header>
+          <div
+            className={`flex ease-in-out duration-300  transition-all cursor-pointer ${
+              activeItem === "About"
+                ? "font-extrabold opacity-100"
+                : "font-normal opacity-50"
+            }`}
+            onClick={() => handleClick("About")}
+          >
+            About
+          </div>
+          <div
+            className={`flex ease-in-out duration-300  transition-all cursor-pointer ${
+              activeItem === "Works"
+                ? "font-extrabold opacity-100"
+                : "font-normal opacity-50"
+            }`}
+            onClick={() => handleClick("Works")}
+          >
+            Works
+          </div>
+          <div
+            className={`flex ease-in-out duration-300  transition-all cursor-pointer ${
+              activeItem === "Contact Us"
+                ? "font-extrabold opacity-100"
+                : "font-normal opacity-50"
+            }`}
+            onClick={() => handleClick("Contact Us")}
+          >
+            Contact Us
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

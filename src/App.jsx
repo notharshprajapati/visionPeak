@@ -4,10 +4,11 @@ import Hero from "./pages/hero";
 import Portfolio from "./pages/portfolio";
 import About from "./pages/about";
 import Footer from "./components/Footer";
+import "@fontsource/kanit";
 
 const App = () => {
   return (
-    <div className="bg-red-100 text-white">
+    <div className="bg-purple-900 text-white">
       <Navbar />
       <Hero />
       <Portfolio />
