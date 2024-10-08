@@ -8,7 +8,7 @@ import "@fontsource/kanit";
 
 const App = () => {
   return (
-    <div className="bg-purple-900 text-white">
+    <div className="bg-black text-white">
       <Navbar />
       <Hero />
       <Portfolio />
