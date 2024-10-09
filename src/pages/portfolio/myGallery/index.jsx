@@ -4,7 +4,7 @@ import Photography from "./Photography";
 
 const MyGallery = () => {
   return (
-    <div className="w-full">
+    <div className="w-full h-fit ">
       <div className="px-40">
         <div className=" flex flex-col items-center">
           <div className="w-full bg-white/50 h-0.5 my-2"> </div>
