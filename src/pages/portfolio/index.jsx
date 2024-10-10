@@ -5,8 +5,7 @@ import SocialMedia from "./SocialMedia";
 
 const Portfolio = () => {
   return (
-    <div className="w-screen h-screen flex flex-col items-center justify-center">
-      <h1 className="text-red-200 ">portfolio</h1>
+    <div className="w-screen h-fit flex flex-col items-center justify-center px-40">
       <RecentProjects />
       <MyGallery />
       <SocialMedia />

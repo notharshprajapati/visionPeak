@@ -2,8 +2,8 @@ import React from "react";
 
 const RecentProjects = () => {
   return (
-    <div className="w-full h-[36rem] my-10  ">
-      <div className="h-full rounded-[20px]   bg-[url('/image/RecentBG.jpg')] bg-cover bg-center mx-20 p-8 flex flex-col justify-between">
+    <div className="w-full h-[36rem] my-20   ">
+      <div className="h-full rounded-[20px]   bg-[url('/image/RecentBG.jpg')] bg-cover bg-center  p-8 flex flex-col justify-between">
         <div>
           <span className=" text-4xl font-bold ">Recent Projects</span>
           <div className="w-full bg-white/50 h-0.5 my-2"> </div>

@@ -3,8 +3,8 @@ import { Fade } from "react-reveal";
 
 const Hero = () => {
   return (
-    <div className="  w-full h-screen text-white ">
-      <div className="h-screen w-full">
+    <div className="  w-full h-fit text-white  ">
+      <div className="h-screen w-screen">
         <div className="w-full h-full">
           <video autoPlay muted loop className="w-full h-full object-cover ">
             <source src="/Hero.mp4" type="video/mp4" />
