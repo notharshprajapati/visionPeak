@@ -10,10 +10,10 @@ const App = () => {
   return (
     <div className="bg-black text-white">
       <Navbar />
-      <Hero />
+      {/* <Hero /> */}
       <Portfolio />
-      <About />
-      <Footer />
+      {/* <About /> */}
+      {/* <Footer /> */}
     </div>
   );
 };

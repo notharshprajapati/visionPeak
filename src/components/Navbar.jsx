@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { FaHome } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
+import { MdPerson, MdWork } from "react-icons/md";
 
 const Navbar = () => {
   const [activeItem, setActiveItem] = useState("Home");
@@ -19,17 +22,10 @@ const Navbar = () => {
             }`}
             onClick={() => handleClick("Home")}
           >
-            Home
-          </div>
-          <div
-            className={`flex ease-in-out duration-300  transition-all cursor-pointer ${
-              activeItem === "About"
-                ? "font-extrabold opacity-100"
-                : "font-normal opacity-50"
-            }`}
-            onClick={() => handleClick("About")}
-          >
-            About
+            <div className="block md:hidden">
+              <FaHome />
+            </div>
+            <div className="hidden md:block">Home</div>
           </div>
           <div
             className={`flex ease-in-out duration-300  transition-all cursor-pointer ${
@@ -39,8 +35,25 @@ const Navbar = () => {
             }`}
             onClick={() => handleClick("Works")}
           >
-            Works
+            <div className="block md:hidden">
+              <MdWork />
+            </div>
+            <div className="hidden md:block">Works</div>
           </div>
+          <div
+            className={`flex ease-in-out duration-300  transition-all cursor-pointer ${
+              activeItem === "About"
+                ? "font-extrabold opacity-100"
+                : "font-normal opacity-50"
+            }`}
+            onClick={() => handleClick("About")}
+          >
+            <div className="block md:hidden">
+              <MdPerson />
+            </div>
+            <div className="hidden md:block">About</div>
+          </div>
+
           <div
             className={`flex ease-in-out duration-300  transition-all cursor-pointer ${
               activeItem === "Contact Us"
@@ -49,11 +62,14 @@ const Navbar = () => {
             }`}
             onClick={() => handleClick("Contact Us")}
           >
-            Contact Us
+            <div className="block md:hidden">
+              <IoIosMail />
+            </div>
+            <div className="hidden md:block"> Contact Us</div>
           </div>
         </div>
       </div>
-      <div className="fixed bottom-0  w-screen h-28  bg-gradient-to-t from-black"></div>
+      {/* <div className="fixed bottom-0  w-screen h-28  bg-gradient-to-t from-black"></div> */}
     </div>
   );
 };

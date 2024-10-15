@@ -24,8 +24,8 @@ const Hero = () => {
       </div>
       <div className="absolute top-1/2 transform -translate-y-1/2  w-full  z- font-bold">
         <div className="flex flex-col  items-center  ">
-          <div class="relative">
-            <span class="text-8xl py-2 text-white/75 bg-transparent backdrop-blur-sm">
+          <div className="relative">
+            <span className="text-8xl py-2 text-white/75 bg-transparent backdrop-blur-sm">
               CAPTURING
             </span>
           </div>

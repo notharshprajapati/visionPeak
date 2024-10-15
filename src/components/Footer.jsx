@@ -1,98 +1,101 @@
 import React from "react";
-import { FaArrowRightLong } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-full h-full bg-[url('/image/footer.jpg')] bg-center bg-cover">
-      <div className="flex flex-col items-center p-16 gap-10 w-full ">
-        <div className="flex justify-between items-center px-4 w-full ">
-          <div className=" font-black text-6xl tracking-widest uppercase text-white/50 ">
-            kcheema027@gmail.com
-          </div>
-          <div className="flex flex-row justify-center items-center px-8  bg-white/25 backdrop-blur-md rounded-full">
-            <div className="px-5 py-2 font-black text-6xl text-black hover:text-white hover:translate-x-1 cursor-pointer transition-all duration-200">
-              <FaArrowRightLong />
-            </div>
+    <div className="flex flex-col items-center justify-center gap-2.5 relative bg-[url(/images/footer.jpg)] bg-cover bg-[50%_50%]">
+      <div className="flex flex-col items-center gap-8 px-0 py-16 relative self-stretch w-full flex-[0_0_auto]">
+        <div className="flex items-center justify-around gap-[124px] px-16 py-0 relative self-stretch w-full flex-[0_0_auto] backdrop-blur-[25px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(25px)_brightness(100%)]">
+          <div className="relative flex-1 mt-[-1.00px] [font-family:'Kanit-Black',Helvetica] font-black text-[#ffffff80] text-4xl lg:text-5xl xl:text-6xl text-center  tracking-[5px]  md:tracking-[18px] leading-[normal]">
+            KCHEEMA027@GMAIL.COM
           </div>
         </div>
-        <div className="flex flex-col items-center gap-8 w-full h-fit">
-          <div className="w-full border-[.1rem] border-white/50"></div>
-          <div className="flex flex-row justify-between items-center px-2 w-full    ">
-            <div className="flex flex-col justify-center items-start p-0 gap-4 w-fit ">
-              <div className="w-full h-fit  font-normal text-2xl  text-white/90">
+        <div className="flex w-full flex-col gap-12 md:gap-0  md:flex-row  justify-between items-center   px-16 py-8 relative self-stretch  flex-[0_0_auto] ml-[-1.00px] mr-[-1.00px] border-t [border-top-style:solid] border-[#ffffff80]">
+          <div className="inline-flex w-fit  flex-col items-center justify-center gap-8 px-4  relative flex-[0_0_auto]">
+            <div className="inline-flex flex-col items-start justify-center gap-2 relative flex-[0_0_auto]">
+              <div className="relative w-fit mt-[-1.00px] [font-family:'Nunito-Regular',Helvetica] font-normal text-white text-xl md:text-2xl tracking-[0] leading-[normal]">
                 Contact Us
               </div>
-              <div className="w-full h-fit font-kanit font-bold text-4xl  text-white">
-                Let&#39;s Discuss your Vision
+              <div className="relative w-fit [font-family:'Kanit-Bold',Helvetica] font-bold text-white text-7xl  md:text-4xl tracking-[0] leading-[normal]">
+                Lets Discuss your Vision
               </div>
-              <div className="w-64 h-fit  font-normal text-base  text-white/80">
-                You deserve the best. Work with us and see the difference.
+              <p className="relative w-fit [font-family:'Nunito-Regular',Helvetica] font-normal text-white text-xl  md:text-base text-center tracking-[0] leading-[normal]">
+                You deserve the best; work with us and see the difference.
+              </p>
+            </div>
+          </div>
+          <div
+            className="flex flex-col md:flex-row items-center justify-center gap-4 p-5 relative w-full xl:w-fit
+             bg-[#ffffff1a] rounded-[10px] overflow-hidden backdrop-blur-[25px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(25px)_brightness(100%)]"
+          >
+            <div className="flex flex-col  items-start gap-4 relative w-full ">
+              <div className="flex items-center gap-2.5 px-4 py-2 relative self-stretch w-full   xl:w-80 flex-[0_0_auto] bg-[#ffffff1a] rounded-lg overflow-hidden border-[0.25px] border-solid border-[#ffffff40] backdrop-blur-[25px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(25px)_brightness(100%)]">
+                <div className="relative w-fit mt-[-0.25px] [font-family:'Nunito-Regular',Helvetica] font-normal text-[#ffffff80] text-xs tracking-[0] leading-[normal]">
+                  Example name
+                </div>
+              </div>
+              <div className="flex items-center gap-2.5 px-4 py-2 relative self-stretch w-full xl:w-80 flex-[0_0_auto] bg-[#ffffff1a] rounded-lg overflow-hidden border-[0.25px] border-solid border-[#ffffff40] backdrop-blur-[25px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(25px)_brightness(100%)]">
+                <div className="relative w-fit mt-[-0.25px] [font-family:'Nunito-Regular',Helvetica] font-normal text-[#ffffff80] text-xs tracking-[0] leading-[normal]">
+                  example@gmail.com
+                </div>
+              </div>
+              <div className="flex items-center gap-2.5 px-4 py-2 relative self-stretch w-full xl:w-80 flex-[0_0_auto] bg-[#ffffff1a] rounded-lg overflow-hidden border-[0.25px] border-solid border-[#ffffff40] backdrop-blur-[25px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(25px)_brightness(100%)]">
+                <div className="relative w-fit mt-[-0.25px] [font-family:'Nunito-Regular',Helvetica] font-normal text-[#ffffff80] text-xs tracking-[0] leading-[normal]">
+                  416-XXXXXXXXX
+                </div>
               </div>
             </div>
-            <div className="flex flex-row justify-center items-center p-5 gap-4 w-fit bg-white/10 backdrop-blur-md rounded-lg ">
-              <div className="flex flex-col items-start gap-4 ">
-                <input
-                  type="text"
-                  placeholder="Example name"
-                  className="box-border  p-2  w-72  bg-white/10 border-[0.1px] border-white/25  rounded-lg text-xs  placeholder:text-white/50 shadow-sm "
-                />
-                <input
-                  type="email"
-                  name=""
-                  id=""
-                  placeholder="Example@gmail.com"
-                  className="box-border   p-2  w-72  bg-white/10 border-[0.1px] border-white/10  rounded-lg text-xs   placeholder:text-white/50 shadow-sm"
-                />
-                <input
-                  type="tel"
-                  placeholder="416-XXXXXXXXX"
-                  className="box-border   p-2  w-72  bg-white/10 border-[0.1px] border-white/10  rounded-lg text-xs  placeholder:text-white/50 shadow-sm"
-                />
-              </div>
-              <div className="flex flex-col items-start gap-4 h-fit">
-                <div className="flex flex-col space-y-4">
-                  <textarea
-                    placeholder="Enter your message"
-                    className="box-border h-[5.25rem] p-2 w-72 bg-white/10 border-[0.1px] border-white/10 rounded-lg text-xs  placeholder:text-white/50 shadow-sm resize-none"
-                  />
+            <div className="flex flex-col items-start gap-4 relative w-full">
+              <div className="flex h-20 items-start gap-2.5 px-4 py-2 relative self-stretch w-full xl:w-80 bg-[#ffffff1a] rounded-lg overflow-hidden border-[0.25px] border-solid border-[#ffffff40] backdrop-blur-[25px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(25px)_brightness(100%)]">
+                <div className="relative w-fit mt-[-0.25px] [font-family:'Nunito-Regular',Helvetica] font-normal text-[#ffffff80] text-xs tracking-[0] leading-[normal]">
+                  Message...
                 </div>
-
-                <button
-                  type="submit"
-                  className="box-border   p-1  w-72  bg-black/25 border-[0.1px] border-white/10 text-xl font-black  rounded-lg bl hover:text-black hover:border-black/10 transition-all duration-200 hover:bg-white/25     shadow-sm"
-                >
+              </div>
+              <div className="flex items-center justify-center gap-2.5 px-[21px] py-1 relative self-stretch w-full xl:w-80 flex-[0_0_auto] bg-[#00000040] rounded-lg overflow-hidden backdrop-blur-[25px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(25px)_brightness(100%)]">
+                <div className="relative w-fit mt-[-1.00px] [font-family:'Nunito-Black',Helvetica] font-black text-[#ffffffbf] text-xl tracking-[0] leading-[normal]">
                   Submit
-                </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="w-full flex flex-col gap-8 ">
-          <div className="w-full border-[.1rem] border-white/50 "></div>
-          <div className="flex flex-row justify-between items-center px-2  w-full h-fit">
-            <div className="flex   w-fit h-fit bg-white/10 backdrop-blur-md rounded-lg">
-              <div className="flex flex-col justify-center items-start p-2 gap-1  rounded-lg">
-                <div className="w-fit  font-normal text-[8px]  text-white/50">
-                  CALL US
-                </div>
-                <div className="w-fit  font-normal text-xs leading-4 text-white/75">
-                  +41609202024
-                </div>
-              </div>
-              <div className="flex flex-col justify-center items-start p-2 gap-1  rounded-lg">
-                <div className="w-fit  font-normal text-[8px]  text-white/50">
-                  VISIT US
-                </div>
-                <div className="w-fit  font-normal text-xs leading-4 text-white/75">
-                  15 Carney Rd, North York, ON M2M 1T1, Canada
-                </div>
+        <div className="flex flex-col gap-4 xl:flex-row xl:gap-0 items-center justify-between px-16 py-8 relative self-stretch w-full flex-[0_0_auto] border-t [border-top-style:solid] border-[#ffffff80]">
+          <div className="inline-flex items-center justify-center relative flex-[0_0_auto] bg-[#ffffff1a] rounded-[10px] overflow-hidden backdrop-blur-[25px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(25px)_brightness(100%)]">
+            <div className="inline-flex flex-col items-start justify-center gap-1 px-4 py-2 relative flex-[0_0_auto] rounded-lg overflow-hidden">
+              <a
+                className="relative w-fit mt-[-0.25px] [font-family:'Nunito-Regular',Helvetica] font-normal text-[#ffffff80] text-[8px] tracking-[0] leading-[normal]"
+                href="mailto:janesmith@gmail.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                CALL US
+              </a>
+              <div className="relative w-fit [font-family:'Nunito-Regular',Helvetica] font-normal text-[#ffffffbf] text-xs tracking-[0] leading-[normal]">
+                +41609202024
               </div>
             </div>
-
-            <div className="flex flex-row justify-center items-center p-4 gap-8   bg-white/10 backdrop-blur-md rounded-lg text-xs">
-              <div>Privacy</div>
-              <div>Terms & Conditions</div>
-              <div>Security</div>
+            <div className="inline-flex flex-col items-start justify-center gap-1 px-4 py-2 relative flex-[0_0_auto] rounded-lg overflow-hidden">
+              <div className="relative w-fit mt-[-0.25px] [font-family:'Nunito-Regular',Helvetica] font-normal text-[#ffffff80] text-[8px] tracking-[0] leading-[normal]">
+                VISIT US
+              </div>
+              <p className="relative w-fit [font-family:'Nunito-Regular',Helvetica] font-normal text-[#ffffffbf] text-xs tracking-[0] leading-[normal]">
+                15 Carney Rd, North York, ON M2M 1T1, Canada
+              </p>
+            </div>
+          </div>
+          <div className="inline-flex items-center justify-center gap-8 p-4 relative flex-[0_0_auto] bg-[#ffffff1a] rounded-[10px] overflow-hidden backdrop-blur-[25px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(25px)_brightness(100%)]">
+            <p className="relative w-fit mt-[-1.00px] [font-family:'Nunito-Regular',Helvetica] font-normal text-[#ffffff80] text-[10px] tracking-[0] leading-[normal]">
+              Copyright 2024 VP. All rights reserved.
+            </p>
+          </div>
+          <div className="inline-flex items-center justify-center gap-8 p-4 relative flex-[0_0_auto] bg-[#ffffff1a] rounded-[10px] overflow-hidden backdrop-blur-[25px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(25px)_brightness(100%)]">
+            <div className="relative w-fit mt-[-1.00px] [font-family:'Nunito-Regular',Helvetica] font-normal text-white text-xs tracking-[0] leading-[normal]">
+              Privacy
+            </div>
+            <div className="relative w-fit mt-[-1.00px] [font-family:'Nunito-Regular',Helvetica] font-normal text-white text-xs tracking-[0] leading-[normal]">
+              Terms &amp; Conditions
+            </div>
+            <div className="relative w-fit mt-[-1.00px] [font-family:'Nunito-Regular',Helvetica] font-normal text-white text-xs tracking-[0] leading-[normal]">
+              Security
             </div>
           </div>
         </div>
