@@ -18,28 +18,32 @@ const SocialMedia = () => {
           </div>
         </div>
       </div>
-      <div className="h-[824px] relative self-stretch w-full">
-        <div className="h-[464px] justify-center top-0 left-[-1285px] inline-flex items-center absolute">
-          <div className="w-[360px] relative h-[464px] bg-[url(images/img00001.jpeg)] bg-cover bg-[50%_50%]" />
-          <div className="w-[379px] relative h-[464px] bg-[url(images/img00002.jpeg)] bg-cover bg-[50%_50%]" />
-          <div className="w-[379px] relative h-[464px] bg-[url(images/img00003.jpeg)] bg-cover bg-[50%_50%]" />
-          <div className="w-[360px] relative h-[464px] bg-[url(images/img00004.jpeg)] bg-cover bg-[50%_50%]" />
-          <div className="w-[379px] relative h-[464px] bg-[url(images/img00005.jpeg)] bg-cover bg-[50%_50%]" />
-          <div className="w-[379px] relative h-[464px] bg-[url(images/img00006.jpeg)] bg-cover bg-[50%_50%]" />
-          <div className="w-[360px] relative h-[464px] bg-[url(images/img00007.jpeg)] bg-cover bg-[50%_50%]" />
-          <div className="w-[379px] relative h-[464px] bg-[url(images/img00008.jpeg)] bg-cover bg-[50%_50%]" />
-          <div className="w-[379px] relative h-[464px] bg-[url(images/img00009.jpeg)] bg-cover bg-[50%_50%]" />
+      <div className=" flex flex-col  h-fit w-full">
+        <div className="  h-80  overflow-hidden   relative">
+          <div className="flex h-full absolute -left-[110rem]">
+            <Card link={"01"} />
+            <Card link={"02"} />
+            <Card link={"03"} />
+            <Card link={"04"} />
+            <Card link={"05"} />
+            <Card link={"06"} />
+            <Card link={"07"} />
+            <Card link={"08"} />
+            <Card link={"09"} />
+            <Card link={"10"} />
+          </div>
         </div>
-        <div className="h-[360px] top-[464px] left-0 overflow-hidden inline-flex items-center absolute">
-          <div className="w-[360px] mt-[-52.00px] mb-[-52.00px] relative h-[464px] bg-[url(images/img00010.jpeg)] bg-cover bg-[50%_50%]" />
-          <div className="w-[379px] mt-[-52.00px] mb-[-52.00px] relative h-[464px] bg-[url(images/img00011.jpeg)] bg-cover bg-[50%_50%]" />
-          <div className="w-[379px] mt-[-52.00px] mb-[-52.00px] relative h-[464px] bg-[url(images/img00012.jpeg)] bg-cover bg-[50%_50%]" />
-          <div className="w-[360px] mt-[-52.00px] mb-[-52.00px] relative h-[464px] bg-[url(images/img00013.jpeg)] bg-cover bg-[50%_50%]" />
-          <div className="w-[379px] mt-[-52.00px] mb-[-52.00px] relative h-[464px] bg-[url(images/img00014.jpeg)] bg-cover bg-[50%_50%]" />
-          <div className="w-[379px] mt-[-52.00px] mb-[-52.00px] relative h-[464px] bg-[url(images/img00015.jpeg)] bg-cover bg-[50%_50%]" />
-          <div className="w-[360px] mt-[-52.00px] mb-[-52.00px] relative h-[464px] bg-[url(images/img00016.jpeg)] bg-cover bg-[50%_50%]" />
-          <div className="w-[379px] mt-[-52.00px] mb-[-52.00px] relative h-[464px] bg-[url(images/img00017.jpeg)] bg-cover bg-[50%_50%]" />
-          <div className="w-[379px] mt-[-52.00px] mb-[-52.00px] relative h-[464px] bg-[url(images/img00018.jpeg)] bg-cover bg-[50%_50%]" />
+        <div className=" flex h-80  overflow-hidden ">
+          <Card link={"01"} />
+          <Card link={"02"} />
+          <Card link={"03"} />
+          <Card link={"04"} />
+          <Card link={"05"} />
+          <Card link={"06"} />
+          <Card link={"07"} />
+          <Card link={"08"} />
+          <Card link={"09"} />
+          <Card link={"10"} />
         </div>
       </div>
     </div>
@@ -47,3 +51,15 @@ const SocialMedia = () => {
 };
 
 export default SocialMedia;
+
+export const Card = ({ link }) => {
+  return (
+    <div className=" relative h-full   p-2   aspect-1 ">
+      <img
+        src={`images/img000${link}.jpeg`}
+        alt={`image ${link}`}
+        className="h-full w-full object-cover object-center rounded-xl"
+      />
+    </div>
+  );
+};
