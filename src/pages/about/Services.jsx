@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Services = () => {
+  const [activeItem, setActiveItem] = useState("Exterior");
+  const handleClick = (item) => {
+    setActiveItem(item);
+  };
+
+  const lists = ["Exterior", "Interior", "Event", "Concept", "Aerial"];
   return (
     <div className="flex flex-col w-full items-center justify-center gap-2.5 px-0 py-8 relative">
       <div className="flex flex-col h-[958px] px-16 py-0 self-stretch w-full items-start relative">
@@ -18,25 +24,26 @@ const Services = () => {
                 reality
               </p>
             </div>
-            <div className="inline-flex gap-[51px] flex-[0_0_auto] items-start relative">
-              <div className="inline-flex flex-col gap-4 flex-[0_0_auto] items-start relative">
-                <div className="relative self-stretch mt-[-1.00px] [font-family:'Nunito-Bold',Helvetica] font-bold text-white text-2xl tracking-[0] leading-[normal]">
-                  Exterior
-                </div>
-                <div className="relative self-stretch [font-family:'Nunito-Regular',Helvetica] font-normal text-[#ffffff80] text-2xl tracking-[0] leading-[normal]">
-                  Interior
-                </div>
-                <div className="relative self-stretch [font-family:'Nunito-Regular',Helvetica] font-normal text-[#ffffff80] text-2xl tracking-[0] leading-[normal]">
-                  Event
-                </div>
-                <div className="relative self-stretch [font-family:'Nunito-Regular',Helvetica] font-normal text-[#ffffff80] text-2xl tracking-[0] leading-[normal]">
-                  Concept
-                </div>
-                <div className="relative self-stretch [font-family:'Nunito-Regular',Helvetica] font-normal text-[#ffffff80] text-2xl tracking-[0] leading-[normal]">
-                  Aerial
-                </div>
+            <div className="flex items-start gap-20  translate-x-56">
+              <div className="flex flex-col gap-[1px]">
+                {lists.map((list, index) => (
+                  <div
+                    key={index}
+                    onClick={() => handleClick(list)}
+                    className={`text-sm cursor-pointer flex justify-end ${
+                      activeItem === list
+                        ? "font-bold opacity-100"
+                        : "font-normal opacity-50"
+                    }`}
+                  >
+                    {list}
+                  </div>
+                ))}
               </div>
-              <div className="relative w-fit mr-[-110.50px] rotate-90 [font-family:'Nunito-ExtraLight',Helvetica] font-extralight text-[#ffffff80] text-base tracking-[10.24px] leading-4 whitespace-nowrap">
+              <div
+                className="rotate-90 font-extralight text-white/80 tracking-[.5rem] h-full"
+                style={{ transformOrigin: "top left" }}
+              >
                 PHOTOGRAPHY
               </div>
             </div>
