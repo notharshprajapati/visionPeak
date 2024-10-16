@@ -1,20 +1,39 @@
 import React from "react";
-import Card from "./Card";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Photography = () => {
   return (
-    <div className="flex flex-col items-start h-full w-full   my-20 ">
-      <div className=" flex flex-row w-full  text-white ">Photography</div>
-      <div className="flex flex-row items-center gap-8 h-[464px] w-full ">
-        <div className="grow h-full bg-white rounded-2xl order-0 ">
-          <Card name="img00002" />
+    <div className="flex flex-col items-start h-full w-full  flex-none my-10 ">
+      <div className=" flex flex-row justify-between w-full text-white my-2 ">
+        <div className="font-bold">Photography</div>
+        <div className="flex items-center gap-2 border-b-[.1rem] ">
+          <div>See All</div>
+          <FaArrowRightLong />
         </div>
-
-        <div className="grow h-full bg-white rounded-2xl order-1 ">
-          <Card name="img00024" />
+      </div>
+      <div className="w-full h-fit grid grid-cols-2 gap-2 ">
+        <div className="w-full h-auto   ">
+          <img
+            src="/images/img00024.jpeg"
+            alt="img00021"
+            className="w-full h-full object-cover object-center rounded-lg"
+          />
         </div>
-        <div className="grow h-full bg-white rounded-2xl order-2 ">
-          <Card name="img00001" />
+        <div className="w-full h-fit grid grid-row-2 gap-2 ">
+          <div className="w-full h-60 md:h-80  ">
+            <img
+              src="/images/img00001.jpeg"
+              alt="img00022"
+              className="w-full h-full object-cover object-center rounded-lg"
+            />
+          </div>
+          <div className="w-full h-40 md:h-60   ">
+            <img
+              src="/images/img00002.jpeg"
+              alt="img00023"
+              className="w-full h-full object-cover object-center rounded-lg"
+            />
+          </div>
         </div>
       </div>
     </div>

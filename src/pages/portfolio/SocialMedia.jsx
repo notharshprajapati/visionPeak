@@ -19,8 +19,8 @@ const SocialMedia = () => {
         </div>
       </div>
       <div className=" flex flex-col  h-fit w-full">
-        <div className="  h-80  overflow-hidden   relative">
-          <div className="flex h-full absolute -left-[110rem]">
+        <div className="  h-40 md:h-60 lg:h-80 overflow-hidden   relative">
+          <div className="flex h-full absolute  -left-[65rem] lg:-left-[110rem] ">
             <Card link={"01"} />
             <Card link={"02"} />
             <Card link={"03"} />
@@ -33,7 +33,7 @@ const SocialMedia = () => {
             <Card link={"10"} />
           </div>
         </div>
-        <div className=" flex h-80  overflow-hidden ">
+        <div className=" flex h-40 md:h-60 lg:h-80  overflow-hidden ">
           <Card link={"01"} />
           <Card link={"02"} />
           <Card link={"03"} />
