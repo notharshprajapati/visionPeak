@@ -14,17 +14,17 @@ const Services = () => {
           SERVICES
         </div>
         <div className="flex flex-col justify-center gap-2.5 self-stretch w-full  -mt-4 md:-mt-6 lg:-mt-8 bg-black rounded-[20px] overflow-hidden items-start relative">
-          <div className="flex justify-between p-8  self-stretch w-full flex-[0_0_auto] items-start relative">
-            <div className="inline-flex flex-col gap-4 w-20 items-start relative">
+          <div className="flex justify-between p-8  self-stretch w-full  items-start relative">
+            <div className="inline-flex  flex-col gap-4 items-start relative">
               <div className="relative self-stretch mt-[-1.00px] [font-family:'Nunito-Regular',Helvetica] font-normal text-[#ffffffbf] text-base tracking-[0] leading-[normal]">
                 Our Expertise
               </div>
-              <p className="relative w-[380px] [font-family:'Kanit-Regular',Helvetica] font-normal text-white text-[32px] tracking-[0] leading-10">
+              <p className="relative w-full   md:w-[380px] font-normal text-white text-[32px] tracking-[0] leading-10">
                 When moments captured every dreams crafted into beautiful
                 reality
               </p>
             </div>
-            <div className="flex items-start gap-20  translate-x-56">
+            <div className="flex  items-start gap-20  translate-x-56">
               <div className="flex flex-col gap-[1px]">
                 {lists.map((list, index) => (
                   <div
@@ -49,8 +49,8 @@ const Services = () => {
             </div>
           </div>
           <div className="flex h-fit flex-col gap-4 lg:gap-0 lg:flex-row items-start justify-between p-8 relative self-stretch w-full">
-            <div className="inline-flex flex-col justify-end gap-4 self-stretch flex-[0_0_auto] items-start relative">
-              <div className="relative w-[380px] [font-family:'Kanit-Regular',Helvetica] font-normal text-white text-2xl tracking-[0] leading-[normal]">
+            <div className="inline-flex flex-col justify-end gap-4 self-stretch  items-start relative">
+              <div className="relative w-[380px] font-normal text-white text-2xl tracking-[0] leading-[normal]">
                 Chasing Clouds at Ontario
               </div>
               <div className="relative self-stretch [font-family:'Nunito-Regular',Helvetica] font-normal text-[#ffffffbf] text-base tracking-[0] leading-[normal]">
