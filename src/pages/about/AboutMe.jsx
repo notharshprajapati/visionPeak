@@ -21,7 +21,7 @@ const AboutMe = () => {
                 <img className="w-full self-stretch relative bg-black pb-0.5" />
               </div>
             </div>
-            <p className="[font-family:'Nunito',Helvetica] self-stretch tracking-[0] text-2xl text-[#000000bf] relative font-normal text-center leading-[normal]">
+            <p className="font-thin [font-family:'Nunito',Helvetica] self-stretch tracking-[0] text-xl text-[#000000bf] relative  text-center leading-[normal]">
               Karan is a passionate home photography specialist, capturing
               stunning exterior and interior shots to showcase properties and
               events. With a keen eye for detail, I deliver high-quality visuals
