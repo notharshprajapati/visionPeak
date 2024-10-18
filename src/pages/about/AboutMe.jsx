@@ -17,7 +17,7 @@ const AboutMe = () => {
             <img className="w-full  relative bg-black pb-0.5" />
           </div>
         </div>
-        <p className="font-thin w-full md:w-2/3 text-xl text-black/50 relative  text-center ">
+        <p className="font-thin w-full md:w-2/3 lg:w-1/2 text-xl text-black/50 relative  text-center my-4 ">
           Karan is a passionate home photography specialist, capturing stunning
           exterior and interior shots to showcase properties and events. With a
           keen eye for detail, I deliver high-quality visuals that help clients
@@ -29,7 +29,7 @@ const AboutMe = () => {
           <div className=" w-fit   text-4xl text-black  font-semibold text-center relative">
             Milestone
           </div>
-          <div className="w-full flex  items-center  justify-between relative px-8">
+          <div className="w-full md:w-1/2q lg:w-3/4 flex  items-center  justify-between relative px-8">
             <div className="inline-flex flex-col items-center  justify-center relative">
               <div className=" w-fit  text-2xl md:text-3xl text-black/75 font-medium text-center  relative">
                 320+
