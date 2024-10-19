@@ -4,7 +4,7 @@ import Services from "./Services";
 
 const About = () => {
   return (
-    <div className="w-screen h-fit flex flex-col items-center justify-center bg-white z-0">
+    <div className="w-screen h-fit font-nunito flex flex-col items-center justify-center bg-white z-0">
       <AboutMe />
       <Services />
     </div>

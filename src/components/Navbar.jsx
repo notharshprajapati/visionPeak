@@ -11,8 +11,8 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 py-2 px-4 md:px-8 bg-white/50 backdrop-blur-md rounded-full text-sm md:text-base z-20">
-        <div className="flex flex-row justify-center items-center  gap-8 text-black font-nunito">
+      <div className="fixed bottom-8 font-nunito left-1/2 transform -translate-x-1/2 py-2 px-4 md:px-8 bg-white/50 backdrop-blur-md rounded-full text-sm md:text-base z-20">
+        <div className="flex flex-row justify-center items-center  gap-8 text-black ">
           <div
             className={`flex ease-in-out duration-300 transition-all cursor-pointer ${
               activeItem === "Home"

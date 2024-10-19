@@ -6,14 +6,14 @@ const SocialMedia = () => {
       <div className="flex items-center justify-around gap-8 px-0 py-2 flex-[0_0_auto] relative self-stretch w-full">
         <div className="flex flex-col items-start justify-center gap-2 relative flex-1 grow">
           <div className="flex flex-col items-center justify-center gap-2 flex-[0_0_auto] opacity-50 relative self-stretch w-full">
-            <div className="mt-[-2.00px] relative self-stretch w-full h-0.5 bg-white" />
+            <div className="mt-2 relative self-stretch w-full h-0.5 bg-white" />
             <div className="relative self-stretch w-full h-0.5 bg-white" />
           </div>
-          <div className="relative self-stretch [font-family:'Kanit-Bold',Helvetica] font-bold text-white text-[40px] text-center tracking-[0] leading-[normal]">
+          <div className="relative self-stretch font-kanit  font-bold text-white text-4xl text-center tracking-[0] leading-[normal]">
             SOCIAL MEDIA
           </div>
           <div className="flex flex-col items-center justify-center gap-2 flex-[0_0_auto] opacity-50 relative self-stretch w-full">
-            <div className="mt-[-2.00px] relative self-stretch w-full h-0.5 bg-white" />
+            <div className="mt-2 relative self-stretch w-full h-0.5 bg-white" />
             <div className="relative self-stretch w-full h-0.5 bg-white" />
           </div>
         </div>

@@ -5,7 +5,9 @@ const RecentProjects = () => {
     <div className="w-full h-[36rem] my-20   ">
       <div className="h-full rounded-xl p-4  bg-[url('/images/image00025.jpeg')] bg-cover bg-center flex flex-col justify-between">
         <div className="w-full">
-          <span className=" text-4xl font-bold ">Recent Projects</span>
+          <span className=" text-4xl font-bold font-kanit uppercase ">
+            Recent Projects
+          </span>
           <div className="w-full bg-white/50 h-0.5 my-2" />
           <div className="w-full bg-white/50 h-0.5" />
         </div>
@@ -42,7 +44,9 @@ const Card = ({ src }) => {
         alt="Image"
       />
       <div className="flex flex-col justify-center items-start gap-5 w-64 text-white">
-        <span className="font-bold text-base">Lorem ipsum dolor</span>
+        <span className="font-bold text-base capitalize">
+          Lorem ipsum dolor
+        </span>
         <span className="font-light text-xs text-justify">
           sit amet conse ctet ur adi pisi cing edi ous m apare eoden.
         </span>

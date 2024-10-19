@@ -9,7 +9,7 @@ const AboutMe = () => {
             <div className="w-full  mt-2 h-0.5 relative bg-black" />
             <div className="w-full  h-0.5 relative bg-black" />
           </div>
-          <div className="   text-4xl md:text-6xl text-black relative font-bold text-center ">
+          <div className=" font-kanit  text-4xl md:text-6xl text-black relative font-bold text-center ">
             ABOUT ME
           </div>
           <div className="w-full flex  flex-col items-center opacity-50 gap-2  justify-center relative">
@@ -26,7 +26,7 @@ const AboutMe = () => {
       </div>
       <div className="border-black flex border-t items-center  px-0 py-4 border-b relative w-full md:w-2/3  gap-4  flex-col lg:flex-row justify-center lg:justify-between ">
         <>
-          <div className=" w-fit   text-4xl text-black  font-semibold text-center relative">
+          <div className=" w-fit font-kanit  text-4xl text-black  font-semibold text-center relative">
             Milestone
           </div>
           <div className="w-full md:w-1/2q lg:w-3/4 flex  items-center  justify-between relative px-8">
@@ -34,7 +34,7 @@ const AboutMe = () => {
               <div className=" w-fit  text-2xl md:text-3xl text-black/75 font-medium text-center  relative">
                 320+
               </div>
-              <div className=" w-fit text-lg md:text-xl text-black/50 font-normal text-center  relative">
+              <div className=" w-fit text-lg md:text-xl text-black/50 text-center  relative">
                 Project Live
               </div>
             </div>
@@ -42,7 +42,7 @@ const AboutMe = () => {
               <div className=" w-fit  text-2xl md:text-3xl text-black/75 font-medium text-center  relative">
                 320+
               </div>
-              <div className=" w-fit text-lg md:text-xl text-black/50 font-normal text-center  relative">
+              <div className=" w-fit text-lg md:text-xl text-black/50  text-center  relative">
                 Project Live
               </div>
             </div>
@@ -50,7 +50,7 @@ const AboutMe = () => {
               <div className=" w-fit  text-2xl md:text-3xl text-black/75 font-medium text-center  relative">
                 320+
               </div>
-              <div className=" w-fit text-lg md:text-xl text-black/50 font-normal text-center  relative">
+              <div className=" w-fit text-lg md:text-xl text-black/50  text-center  relative">
                 Project Live
               </div>
             </div>
